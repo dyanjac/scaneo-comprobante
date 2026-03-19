@@ -1,0 +1,9 @@
+services:
+  donut:
+    build: .
+    container_name: donut-service
+    ports:
+      - "8000:8000"
+    environment:
+      - DONUT_MODEL_ID=naver-clova-ix/donut-base
+      - DONUT_MAX_LENGTH=1024
